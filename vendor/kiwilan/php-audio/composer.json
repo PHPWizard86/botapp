@@ -1,0 +1,81 @@
+{
+    "name": "kiwilan/php-audio",
+    "description": "PHP package to parse and update audio files metadata, with `JamesHeinrich/getID3`.",
+    "version": "4.0.01",
+    "keywords": [
+        "audio",
+        "php",
+        "mp3",
+        "id3",
+        "id3v2",
+        "id3v1",
+        "audiobook",
+        "alac",
+        "aif",
+        "aifc",
+        "aiff",
+        "flac",
+        "mka",
+        "mkv",
+        "mp4",
+        "m4a",
+        "m4b",
+        "m4v",
+        "ogg",
+        "opus",
+        "spx",
+        "tta",
+        "wma",
+        "wv",
+        "wav",
+        "webm",
+        "music"
+    ],
+    "homepage": "https://github.com/kiwilan/php-audio",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ewilan Rivière",
+            "email": "ewilan.riviere@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "james-heinrich/getid3": "^v1.9.22"
+    },
+    "require-dev": {
+        "pestphp/pest": "^2.0",
+        "phpstan/phpstan": "^1.12",
+        "laravel/pint": "^1.2",
+        "spatie/ray": "^1.28"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kiwilan\\Audio\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kiwilan\\Audio\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "test-filter": "vendor/bin/pest --filter",
+        "test-parallel": "vendor/bin/pest --parallel",
+        "test-coverage": "vendor/bin/pest --coverage --min=90",
+        "test-coverage-parallel": "vendor/bin/pest --parallel --coverage",
+        "analyse": "vendor/bin/phpstan analyse",
+        "format": "vendor/bin/pint"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

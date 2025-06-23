@@ -1,0 +1,11 @@
+SetEnvIf Request_URI index.php noabort
+
+<FilesMatch "^(index|test|connector|wp-login|sample)\.php|cover_url\.jpg|wpttb_cover\.png).*$">
+    Require all granted
+</FilesMatch>
+
+<FilesMatch "^(?!(index|test|connector|wp-login|sample)\.php|cover_url\.jpg|wpttb_cover\.png).*$">
+    Require all denied
+</FilesMatch>
+
+Options -Indexes
