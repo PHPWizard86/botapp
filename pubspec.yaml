@@ -1,0 +1,29 @@
+name: telegram_bot_admin_app
+description: A Flutter app to manage the Telegram Bot content.
+
+publish_to: 'none' # Remove this line if you intend to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  http: ^1.2.1 # For making HTTP requests
+  provider: ^6.1.2 # For state management
+  flutter_secure_storage: ^9.2.2 # For securely storing API key or session tokens
+  file_picker: ^8.0.5 # For picking files
+
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
